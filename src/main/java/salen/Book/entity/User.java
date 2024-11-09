@@ -16,14 +16,6 @@ public class User {
     private LocalDate birthday;
     private String email;
 
-    public User(String name, String surname, String lastName, LocalDate birthday, String email) {
-        this.name = name;
-        this.surname = surname;
-        this.lastName = lastName;
-        this.birthday = birthday;
-        this.email = email;
-    }
-
     public int getAge() {
         return LocalDate.now().getYear() - birthday.getYear();
     }
